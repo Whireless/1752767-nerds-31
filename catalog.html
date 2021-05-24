@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="">
     <title>Каталог</title>
 </head>
 <body>
@@ -21,27 +22,36 @@
     </header>
     <main>
      <section>
-        <form action="">
+        <form action="https://echo.htmlacademy.ru/">
             <fieldset>
-             <legend>СТОИМОСТЬ:</legend>
-               <input type="range" name="">
-               <label>ОТ<input type="text" name=""></label>
-               <label>ДО<input type="text" name=""></label>
-             <legend>СЕТКА:</legend>
+             <legend>Стоимость:</legend>
+               <div class="filter">
+                 <button></button>
+                 <button></button>
+               </div>
+               <div class="filter-interval">
+                <label>От<input type="text" name="min-price" value="0"></label>
+                <label>До<input type="text" name="max-price" value="15000"></label>
+               </div>
+            </fieldset>
+            <fieldset>
+             <legend>Сетка:</legend>
                <label><input type="radio" name="grid" value="adaptive" checked>Адаптивная</label>
                <label><input type="radio" name="grid" value="fixed">Фиксированная</label>
                <label><input type="radio" name="grid" value="rubber">Резиновая</label>
-             <legend>ОСОБЕННОСТИ:</legend>
+            </fieldset>
+            <fieldset>
+             <legend>Особенности:</legend>
                <label><input type="checkbox" value="slider" checked>Слайдер</label>
                <label><input type="checkbox" value="advantages">Блок преимуществ</label>
                <label><input type="checkbox" value="news" checked>Новости</label>
                <label><input type="checkbox" value="galery">Галерея</label>
                <label><input type="checkbox" value="basket">Корзина</label>
            </fieldset>
-            <button type="submit">ПОКАЗАТЬ</button>
+            <button type="submit">Показать</button>
         </form>
      </section>
-     <p>СОРТИРОВАТЬ:</p>
+     <p>Сортировать:</p>
      <ul>
          <li><a href="#">По цене</a></li>
          <li><a href="#">По типу</a></li>
@@ -55,54 +65,48 @@
          <ul>
              <li>
                 <img src="" alt="">
-                <img src="" alt="">
                 <div class="content-block">
-                  <p>SEDONA</p>
+                  <p><a href="#">Sedona</a></p>
                   <p>Информационный сайт для туристов</p>
                   <a href="#">9 900 ₽</a>
                 </div>
              </li>
               <li>
                 <img src="" alt="">
-                <img src="" alt="">
                 <div class="content-block">
-                  <p>PINK APP</p>
+                  <p><a href="#">Pink App</a></p>
                   <p>Продуктовый лендинг приложения для iOS и Android</p>
                   <a href="#">9 900 ₽</a>
                 </div>
              </li>
              <li>
                 <img src="" alt="">
-                <img src="" alt="">
                 <div class="content-block">
-                  <p>BARBERSHOP</p>
+                  <p><a href="#">Barbershop</a></p>
                   <p>Сайт салона красоты. Для мужчин, да.</p>
                   <a href="#">9 900 ₽</a>
                 </div>
              </li>
              <li>
                 <img src="" alt="">
-                <img src="" alt="">
                 <div class="content-block">
-                  <p>MISHKA</p>
+                  <p><a href="#">Mishka</a></p>
                   <p>Интернет-магазин вязаных игрушек</p>
                   <a href="#">9 900 ₽</a>
                 </div>
              </li>
              <li>
                 <img src="" alt="">
-                <img src="" alt="">
                 <div class="content-block">
-                  <p>A PLUS</p>
+                  <p><a href="#">A Plus</a></p>
                   <p>Лендинг курсов повышения квалификации</p>
                   <a href="#">9 900 ₽</a>
                 </div>
              </li>
              <li>
                 <img src="" alt="">
-                <img src="" alt="">
                 <div class="content-block">
-                  <p>КВАСТ</p>
+                  <p><a href="#">Кваст</a></p>
                   <p>Промо-сайт производителя крафтового кваса</p>
                   <a href="#">9 900 ₽</a>
                 </div>
@@ -117,7 +121,7 @@
      </ul>
      <section>
         <h2>Карта</h2>
-        <iframe src=""></iframe>
+        <iframe></iframe>
         <img src="" alt="">
      </section>
     </main>
