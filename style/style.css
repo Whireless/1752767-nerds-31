@@ -8,9 +8,9 @@
     --basic-yellow: #EFC849;
     --hover-yellow: #EAB534;
     --deep-yellow: #E5A722;
-    --basic-white: #ffffff;
+    --basic-white: #FFFFFF;
     --basic-black: #000000;
-    --basic-grey: #eeeeee;
+    --basic-grey: #EEEEEE;
 }
 
 body {
@@ -55,18 +55,6 @@ body {
     margin: 15px;
 }
 
-.work-item1 {
-    background-color: var(--basic-red);
-}
-
-.work-item2 {
-    background-color: var(--basic-green);
-}
-
-.work-item3 {
-    background-color: var(--basic-yellow);
-}
-
 .logo:hover {
     opacity: 0.7;
 }
@@ -103,27 +91,27 @@ body {
     opacity: 0.3;
 }
 
-.green {
+.button-green {
     background-color: var(--basic-green);
 }
 
-.green:hover {
+.button-green:hover {
     background-color: var(--hover-green);
 }
 
-.green:active {
+.button-green:active {
     background-color: var(--deep-green);
 }
 
-.yellow {
+.button-yellow {
     background-color: var(--basic-yellow);
 }
 
-.yellow:hover {
+.button-yellow:hover {
     background-color: var(--hover-yellow);
 }
 
-.yellow:active {
+.button-yellow:active {
     background-color: var(--deep-yellow);
 }
 
