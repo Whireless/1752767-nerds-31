@@ -11,6 +11,8 @@
     --basic-white: #FFFFFF;
     --basic-black: #000000;
     --basic-grey: #EEEEEE;
+    --hover-grey: #DFDFDF;
+    --deep-grey: #D5D5D5;
 }
 
 body {
@@ -51,6 +53,10 @@ body {
     margin-left: 30px;
 }
 
+.work-list {
+    list-style: none;
+}
+
 .work-list li {
     margin: 15px;
 }
@@ -78,16 +84,22 @@ body {
     vertical-align: middle;
     border-radius: 3px;
     color: var(--basic-white);
-    background-color: var(--basic-red);
-}
-
-.button:hover {
-    background-color: var(--hover-red);
 }
 
 .button:active {
-    background-color: var(--deep-red);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.button-red {
+    background-color: var(--basic-red);
+}
+
+.button-red:hover {
+    background-color: var(--hover-red);
+}
+
+.button-red:active {
+    background-color: var(--deep-red);
     opacity: 0.3;
 }
 
@@ -101,6 +113,7 @@ body {
 
 .button-green:active {
     background-color: var(--deep-green);
+    opacity: 0.3;
 }
 
 .button-yellow {
@@ -113,10 +126,7 @@ body {
 
 .button-yellow:active {
     background-color: var(--deep-yellow);
-}
-
-.work-list {
-    list-style: none;
+    opacity: 0.3;
 }
 
 .social li {
@@ -180,4 +190,138 @@ body {
     background-color: var(--deep-red);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
     opacity: 0.3;
+}
+
+/* Стили для внутренней страницы */
+
+.shop {
+    border-bottom: 2px solid var(--basic-red);
+}
+
+.input-form {
+    width: 260px;
+    margin-left: 10px;
+}
+
+.input-form legend {
+    text-transform: uppercase;
+}
+
+.input-form fieldset {
+    border: none;
+}
+
+.input-form label {
+    text-align: left;
+    display: block;
+}
+
+.button-show {
+    color: var(--basic-black);
+    width: 260px;
+    height: 50px;
+    border: none;
+}
+
+.button-show:hover {
+    background-color: var(--hover-grey);
+}
+
+.button-show:active {
+    background-color: var(--deep-grey);
+}
+
+.sorting {
+    text-transform: uppercase;
+}
+
+.sorting li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+    opacity: 0.3;
+}
+
+.sorting li:hover {
+    opacity: 0.6;
+}
+
+.sorting li:active {
+    opacity: 1;
+}
+
+.sorting a {
+    text-decoration: none;
+    color: var(--basic-black);
+}
+
+.catalog li {
+    list-style: none;
+    margin: 15px;
+}
+
+.catalog a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content-block {
+    width: 360px;
+    height: 231px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--basic-grey);
+}
+
+.content-block a:first-child {
+    color: var(--basic-black);
+}
+
+.content-block a:first-child:hover {
+    color: var(--basic-red);
+}
+
+.content-block a:first-child:active {
+    opacity: 0.3;
+}
+
+.button-price {
+    background-color: var(--basic-red);
+}
+
+.button-price:hover {
+    background-color: var(--hover-red);
+}
+
+.button-price:active {
+    background-color: var(--deep-red);
+}
+
+.pagination li {
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.pagination a {
+    color: var(--basic-black);
+    background-color: var(--basic-grey);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.pagination a:hover {
+    background-color: var(--hover-grey);
+}
+
+.pagination a:active {
+    background-color: var(--deep-grey);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    opacity: 0.3;
+}
+
+.pagination .disable-button {
+    background-color: var(--basic-white);
+    border: 3px solid var(--basic-grey);
 }
