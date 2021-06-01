@@ -13,6 +13,7 @@
     --basic-grey: #EEEEEE;
     --hover-grey: #DFDFDF;
     --deep-grey: #D5D5D5;
+    --special-grey: #666666;
 }
 
 body {
@@ -33,6 +34,11 @@ body {
     padding-right: 100px;
 }
 
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
 .main-navigation a {
     text-transform: uppercase;
     text-decoration: none;
@@ -47,10 +53,18 @@ body {
     opacity: 0.3;
 }
 
+.navigation-list {
+    display: flex;
+    margin-top: 35px;
+}
+
 .navigation-list li {
     list-style: none;
-    display: inline-block;
     margin-left: 30px;
+}
+
+.basket {
+    margin-top: 35px;
 }
 
 .work-list {
@@ -129,11 +143,6 @@ body {
     opacity: 0.3;
 }
 
-.social li {
-    list-style: none;
-    display: inline-block;
-}
-
 .skill-list {
     list-style: none;
 }
@@ -173,13 +182,16 @@ body {
     opacity: 0.1;
 }
 
+.social {
+    display: flex;
+}
+
 .social li {
+    list-style: none;
     background-color: var(--basic-grey);
     border-radius: 50%;
-    padding: 10px;
+    padding: 10px 10px;
     margin: 5px;
-    vertical-align: middle;
-    text-align: center;
 }
 
 .social li:hover {
@@ -205,6 +217,7 @@ body {
 
 .input-form legend {
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .input-form fieldset {
@@ -233,11 +246,21 @@ body {
 
 .sorting {
     text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sorting ul {
+    display: flex;
+}
+
+.sorting p {
+    font-weight: 700;
+    margin-right: 200px;
 }
 
 .sorting li {
     list-style: none;
-    display: inline-block;
     margin-left: 15px;
     opacity: 0.3;
 }
@@ -267,10 +290,17 @@ body {
 
 .content-block {
     width: 360px;
-    height: 231px;
+    min-height: 231px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     text-align: center;
-    vertical-align: middle;
     background-color: var(--basic-grey);
+}
+
+.content-block p:nth-child(2) {
+    color: var(--special-grey);
+    line-height: 18px;
 }
 
 .content-block a:first-child {
@@ -297,17 +327,23 @@ body {
     background-color: var(--deep-red);
 }
 
-.pagination li {
+.pagination {
     list-style: none;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     text-transform: uppercase;
+}
+
+.pagination li {
+    margin-left: 10px;
 }
 
 .pagination a {
     color: var(--basic-black);
     background-color: var(--basic-grey);
     text-decoration: none;
-    padding: 10px;
+    padding: 15px 20px;
     border-radius: 3px;
 }
 
