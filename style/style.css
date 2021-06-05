@@ -50,7 +50,7 @@ body {
 
 .main-navigation {
     display: grid;
-    grid-template-columns: 160px min-content 115px;
+    grid-template-columns: 160px min-content 160px;
     align-items: center;
     gap: 200px;
     margin-top: 25px;
@@ -119,6 +119,7 @@ body {
 }
 
 .button {
+    display: inline-block;
     line-height: 18px;
     padding: 10px 30px;
     text-align: center;
@@ -273,7 +274,25 @@ body {
     border-bottom: 2px solid var(--basic-red);
 }
 
+.catalog-preview {
+    text-align: center;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    margin-top: 80px;
+    padding-bottom: 108px;
+}
+
+.catalog-container {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    grid-template-rows: 20px min-content min-content;
+    column-gap: 140px;
+}
+
 .input-form {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     width: 260px;
     margin-left: 10px;
 }
@@ -308,18 +327,23 @@ body {
 }
 
 .sorting {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
     text-transform: uppercase;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .sorting ul {
+    padding: 0;
+    margin: 0;
     display: flex;
 }
 
 .sorting p {
     font-weight: 700;
-    margin-right: 200px;
+    margin-right: 320px;
 }
 
 .sorting li {
@@ -339,6 +363,20 @@ body {
 .sorting a {
     text-decoration: none;
     color: var(--basic-black);
+}
+
+.catalog {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    margin-top: 57px;
+}
+
+.catalog ul {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .catalog li {
@@ -391,7 +429,11 @@ body {
 }
 
 .pagination {
+    padding: 0;
+    margin: 55px 0 0 0;
     list-style: none;
+    grid-column: 2 / 3;
+    grid-row: 4 / 6;
     display: flex;
     justify-content: center;
     flex-direction: row;
