@@ -74,11 +74,15 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    column-gap: 35px;
+    column-gap: 47px;
 }
 
 .navigation-list li {
     list-style: none;
+}
+
+.slider-item {
+    display: flex;
 }
 
 .slider-item p:first-child {
@@ -233,6 +237,7 @@ body {
 }
 
 .social {
+    align-items: center;
     width: 260px;
     display: flex;
 }
@@ -241,8 +246,8 @@ body {
     list-style: none;
     background-color: var(--basic-grey);
     border-radius: 50%;
-    padding: 10px 10px;
-    margin: 5px;
+    padding: 10px;
+    margin: 10px;
 }
 
 .social li:hover {
@@ -262,6 +267,7 @@ body {
 .social-info p:first-child {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 0;
 }
 
 .social-info p:last-child {
