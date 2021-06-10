@@ -91,6 +91,14 @@ body {
     line-height: 55px;
 }
 
+.slider-info {
+    width: 400px;
+}
+
+.slider-photo {
+    width: 760px;
+}
+
 .work {
     margin-top: 80px;
 }
@@ -230,7 +238,40 @@ body {
     margin-top: 80px;
 }
 
+.map-info {
+    background-color: var(--basic-white);
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 49px;
+    padding-bottom: 47px;
+}
+
+.map-info h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 23px;
+}
+
+.map-info p {
+    line-height: 18px;
+    color: var(--special-grey);
+}
+
+.map-info button {
+    width: 219px;
+    height: 50px;
+    text-transform: uppercase;
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+    margin-top: 37px;
+    border: none;
+    border-radius: 3px;
+}
+
 .main-footer .container {
+    margin-top: 69px;
+    margin-bottom: 69px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -238,7 +279,6 @@ body {
 
 .social {
     align-items: center;
-    width: 260px;
     display: flex;
 }
 
@@ -246,8 +286,15 @@ body {
     list-style: none;
     background-color: var(--basic-grey);
     border-radius: 50%;
-    padding: 10px;
-    margin: 10px;
+    margin: 11px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 81px;
+    height: 81px;
 }
 
 .social li:hover {
@@ -258,10 +305,6 @@ body {
     background-color: var(--deep-red);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
     opacity: 0.3;
-}
-
-.social-info {
-    width: 660px;
 }
 
 .social-info p:first-child {
