@@ -239,17 +239,21 @@ body {
 }
 
 .map-info {
+    position: absolute;
+    left: 100px;
+    top: 54px;
+    right: auto;
+    bottom: 54px;
     background-color: var(--basic-white);
     padding-right: 50px;
     padding-left: 50px;
-    padding-top: 49px;
-    padding-bottom: 47px;
 }
 
 .map-info h2 {
     text-transform: uppercase;
     font-size: 18px;
     line-height: 30px;
+    margin-top: 49px;
     margin-bottom: 23px;
 }
 
@@ -267,6 +271,11 @@ body {
     margin-top: 37px;
     border: none;
     border-radius: 3px;
+}
+
+.map-description {
+    overflow: hidden;
+    position: relative;
 }
 
 .main-footer .container {
@@ -349,6 +358,8 @@ body {
 
 .input-form fieldset {
     border: none;
+    margin: 0;
+    padding: 0;
 }
 
 .input-form label {
@@ -475,13 +486,11 @@ body {
     margin: 55px 0 0 0;
     list-style: none;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
     text-transform: uppercase;
 }
 
 .pagination li {
-    margin-left: 10px;
+    margin-right: 11px;
 }
 
 .pagination a {
@@ -492,17 +501,18 @@ body {
     border-radius: 3px;
 }
 
-.pagination a:hover {
+.pagination a:hover:not(.disable-button) {
     background-color: var(--hover-grey);
 }
 
-.pagination a:active {
+.pagination a:active:not(.disable-button) {
     background-color: var(--deep-grey);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
     opacity: 0.3;
 }
 
 .pagination .disable-button {
+    padding: 12px 17px;
     background-color: var(--basic-white);
     border: 3px solid var(--basic-grey);
 }
