@@ -240,13 +240,12 @@ body {
 
 .map-info {
     position: absolute;
-    left: 100px;
-    top: 54px;
-    right: auto;
-    bottom: 54px;
+    left: calc(50% - 580px);
     background-color: var(--basic-white);
     padding-right: 50px;
     padding-left: 50px;
+    margin-top: 54px;
+    margin-bottom: 54px;
 }
 
 .map-info h2 {
@@ -269,6 +268,7 @@ body {
     background-color: var(--basic-red);
     color: var(--basic-white);
     margin-top: 37px;
+    margin-bottom: 47px;
     border: none;
     border-radius: 3px;
 }
