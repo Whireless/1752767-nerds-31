@@ -81,6 +81,23 @@ body {
     list-style: none;
 }
 
+.main-navigation .basket {
+    position: relative;
+    margin-left: auto;
+}
+
+.main-navigation .basket::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -40px;
+    top: 4px;
+    background-image: url("img/basket.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
 .slider-item {
     display: flex;
 }
@@ -213,17 +230,23 @@ body {
 .partners li {
     align-self: center;
     list-style: none;
-    border-right: 2px solid var(--basic-grey);
     padding: 10px;
     margin: 10px;
 }
 
-.partners li:last-child {
-    border: none;
+.partners a {
+    position: relative;
+    opacity: 0.2;
 }
 
-.partners a {
-    opacity: 0.2;
+.partners a::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 52px;
+    left: 250px;
+    top: -25px;
+    border-left: 2px solid var(--basic-grey);
 }
 
 .partners a:hover {
@@ -324,6 +347,14 @@ body {
 
 .social-info p:last-child {
     line-height: 22px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 /* Стили для внутренней страницы */
