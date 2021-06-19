@@ -54,11 +54,9 @@
         </div>
       </div>
       <div class="slider-preview">
-        <ul class="slider-preview-list">
-          <li><button type="button" class="slider-button slider-button-active"></button></li>
-          <li><button type="button" class="slider-button"></button></li>
-          <li><button type="button" class="slider-button"></button></li>
-        </ul>
+          <button type="button" class="slider-button slider-button-active"></button>
+          <button type="button" class="slider-button"></button>
+          <button type="button" class="slider-button"></button>
       </div>
     </section>
     </div>
@@ -127,18 +125,6 @@
      </div>
      <img src="img/map.png" width="1440" height="416" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
     </div>
-    <section class="feedback-popup visually-hidden">
-      <form method="POST" action="https://echo.htmlacademy.ru/">
-       <h3>Напишите нам</h3>
-       <button class="popup-button-cross" type="button"></button>
-      <fieldset>
-       <label>Ваше имя:<br><input type="text" placeholder="Имя Фамилия" name="name and surname"></label>
-       <label>Ваш email:<br><input type="email" placeholder="email@example.com" name="email"></label>
-       <label>Текст письма:<br><input type="textarea" placeholder="В свободной форме" name="other text"></label>
-       <button class="button">Отправить</button>
-       </fieldset>
-      </form>
-    </section>
    </section>
   </main>
    <footer class="main-footer">
@@ -155,5 +141,17 @@
      </div>
     </div>
    </footer>
+   <section class="feedback-popup">
+    <form method="POST" action="https://echo.htmlacademy.ru/">
+     <h3>Напишите нам</h3>
+     <button class="popup-button-cross" type="button"></button>
+     <div class="popup-container">
+     <label>Ваше имя:<br><input type="text" placeholder="Имя Фамилия" name="name and surname"></label>
+     <label>Ваш email:<br><input type="email" placeholder="email@example.com" name="email"></label>
+     <label>Текст письма:<br><input type="textarea" placeholder="В свободной форме" name="other text"></label>
+     </div>
+     <button class="button" type="submit">Отправить</button>
+    </form>
+  </section>
   </body>
 </html>

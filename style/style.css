@@ -140,41 +140,28 @@ body {
 }
 
 .slider-preview {
+    width: 88px;
     position: absolute;
     left: 540px;
     top: 315px;
-}
-
-.slider-preview-list {
-    margin: 0;
-    padding: 0;
-    width: 88px;
-    list-style: none;
     display: flex;
     justify-content: space-between;
-}
-
-.slider-preview-list li {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-color: var(--basic-white);
-    position: relative;
 }
 
 .slider-button-active {
     background-image: url("../img/index/slider-button-active.svg");
     background-repeat: no-repeat;
+    background-position: 5px 5px;
     width: 8px;
     height: 8px;
 }
 
 .slider-button {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
     background-color: var(--basic-white);
     border: none;
-    position: absolute;
-    top: 5px;
-    left: 5px;
 }
 
 .work {
@@ -381,30 +368,38 @@ body {
 }
 
 .map-description {
-    overflow: hidden;
     position: relative;
+    height: 416px;
 }
 
 .map-description img {
-    object-fit: fill;
+    object-fit: cover;
+    width: 100%;
 }
 
 .feedback-popup {
-    position: relative;
-    width: 960px;
+    display: none;
+    position: fixed; 
+    left: 203px;
+    top: 50px;
+    width: 861px;
+    height: 527px;
+    background-color: var(--basic-white);
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-    padding-left: 100px;
+    padding-right: 99px;
     padding-top: 63px;
-    margin-left: 240px;
 }
 
-.feedback-popup fieldset {
-    padding: 0;
-    margin: 0 99px 0 0;
-    border: none;
+.feedback-popup form {
+    margin-left: 100px;
+    margin-bottom: 84px;
+}
+
+.popup-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 761px;
 }
 
 .feedback-popup h3 {
@@ -433,6 +428,7 @@ body {
 }
 
 .feedback-popup label:nth-child(3) {
+    flex-basis: 100%;
     margin-top: 34px;
 }
 
@@ -444,22 +440,21 @@ body {
 
 .feedback-popup input[type="text"] {
     padding: 16px 0px 16px 16px;
-    width: 360px;
+    width: 340px;
 }
 
 .feedback-popup input[type="email"] {
     padding: 16px 0px 16px 16px;
-    width: 360px;
+    width: 340px;
 }
 
 .feedback-popup input[type="textarea"] {
-    padding: 16px 80px 84px 16px;
-    width: 760px;
+    padding: 16px 0px 84px 16px;
+    width: 740px;
 }
 
 .feedback-popup button:last-child {
     margin-top: 47px;
-    margin-bottom: 84px;
     width: 259px;
     background-color: var(--basic-red);
 }
