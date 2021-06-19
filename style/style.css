@@ -75,7 +75,10 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    column-gap: 47px;
+    flex-wrap: wrap;
+    width: 437px;
+    height: 30px;
+    column-gap: 45px;
 }
 
 .navigation-list li {
@@ -372,16 +375,20 @@ body {
     height: 416px;
 }
 
-.map-description img {
+.map-description iframe {
     object-fit: cover;
     width: 100%;
+    border: none;
 }
 
 .feedback-popup {
     display: none;
     position: fixed; 
-    left: 203px;
-    top: 50px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
     width: 861px;
     height: 527px;
     background-color: var(--basic-white);
@@ -419,6 +426,7 @@ body {
     background-repeat: no-repeat;
     background-color: var(--basic-white);
     border: none;
+    cursor: pointer;
 }
 
 .feedback-popup label {
