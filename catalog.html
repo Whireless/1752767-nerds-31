@@ -35,8 +35,8 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <button class="toggle toggle-min"></button>
-                <button class="toggle toggle-max"></button>
+                <button class="toggle toggle-min" type="button"></button>
+                <button class="toggle toggle-max" type="button"></button>
               </div>
               <div class="filter-interval">
                 <label>От<input type="text" name="min-price" value="0"></label>
@@ -55,16 +55,16 @@
         </fieldset>
         <fieldset class="features">
           <legend>Особенности:</legend>
-            <input id="checkbox-input-slider" class="checkbox-input-features visually-hidden" type="checkbox" value="slider" checked>
+            <input id="checkbox-input-slider" class="checkbox-input-features visually-hidden" type="checkbox" name="features" value="slider" checked>
               <label for="checkbox-input-slider">Слайдер</label>
-            <input id="checkbox-input-advantages" class="checkbox-input-features visually-hidden" type="checkbox" value="advantages">
+            <input id="checkbox-input-advantages" class="checkbox-input-features visually-hidden" type="checkbox" name="features" value="advantages">
               <label for="checkbox-input-advantages">Блок преимуществ</label>
-            <input id="heckbox-input-news" class="checkbox-input-features visually-hidden" type="checkbox" value="news" checked>
+            <input id="checkbox-input-news" class="checkbox-input-features visually-hidden" type="checkbox" name="features" value="news" checked>
               <label for="checkbox-input-news">Новости</label>
-            <input id="heckbox-input-galery" class="checkbox-input-features visually-hidden" type="checkbox" value="galery">
-              <label for="heckbox-input-galery">Галерея</label>
-            <input id="heckbox-input-basket" class="checkbox-input-features visually-hidden" type="checkbox" value="basket">
-              <label for="heckbox-input-basket">Корзина</label>
+            <input id="checkbox-input-galery" class="checkbox-input-features visually-hidden" type="checkbox" name="features" value="galery">
+              <label for="checkbox-input-galery">Галерея</label>
+            <input id="checkbox-input-basket" class="checkbox-input-features visually-hidden" type="checkbox" name="features" value="basket">
+              <label for="checkbox-input-basket">Корзина</label>
         </fieldset>
         <button class="button button-show" type="submit">Показать</button>
       </form>
@@ -169,5 +169,17 @@
         </div>
     </div>
   </footer>
+  <section class="feedback-popup">
+    <form method="POST" action="https://echo.htmlacademy.ru/">
+     <h3>Напишите нам</h3>
+     <button class="popup-button-cross" type="button" aria-label="Закрыть"></button>
+     <div class="popup-container">
+     <label>Ваше имя:<br><input type="text" placeholder="Имя Фамилия" name="name and surname"></label>
+     <label>Ваш email:<br><input type="email" placeholder="email@example.com" name="email"></label>
+     <label>Текст письма:<br><input type="textarea" placeholder="В свободной форме" name="other text"></label>
+     </div>
+     <button class="button" type="submit">Отправить</button>
+    </form>
+  </section>
 </body>
 </html>
