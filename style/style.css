@@ -538,7 +538,7 @@ body {
     width: 340px;
 }
 
-.feedback-popup input[type="textarea"] {
+.feedback-popup .input-other-text[type="text"] {
     padding: 16px 0px 84px 16px;
     width: 740px;
 }
