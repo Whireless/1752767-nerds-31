@@ -148,9 +148,18 @@
      <h3>Напишите нам</h3>
      <button class="popup-button-cross" type="button" aria-label="Закрыть"></button>
      <div class="popup-container">
-     <label>Ваше имя:<br><input type="text" placeholder="Имя Фамилия" name="name and surname"></label>
-     <label>Ваш email:<br><input type="email" placeholder="email@example.com" name="email"></label>
-     <label>Текст письма:<br><input class="input-other-text" type="text" placeholder="В свободной форме" name="other text"></label>
+       <div class="popup-item">
+        <label for="popup-input-name">Ваше имя:</label>
+         <input id="popup-input-name" type="text" placeholder="Имя Фамилия" name="name and surname">
+       </div>
+       <div class="popup-item">
+        <label for="popup-input-email">Ваш email:</label>
+         <input id="popup-input-email" type="email" placeholder="email@example.com" name="email">
+       </div>
+       <div class="popup-item">
+        <label for="popup-input-other-text">Текст письма:</label>
+         <input id="popup-input-other-text" class="input-other-text" type="text" placeholder="В свободной форме" name="other text">
+       </div>
      </div>
      <button class="button" type="submit">Отправить</button>
     </form>
