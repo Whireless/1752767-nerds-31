@@ -414,6 +414,10 @@ body {
     border-radius: 3px;
 }
 
+.map-info button:hover {
+    cursor: pointer;
+}
+
 .map-description {
     position: relative;
     height: 416px;
@@ -485,7 +489,6 @@ body {
     background-repeat: no-repeat;
     background-color: var(--basic-white);
     border: none;
-    cursor: pointer;
     opacity: 0.3;
 }
 
@@ -544,6 +547,10 @@ body {
 .feedback-popup .input-other-text[type="text"] {
     padding: 16px 0px 84px 16px;
     width: 740px;
+}
+
+.feedback-popup button {
+    cursor: pointer;
 }
 
 .feedback-popup button:last-child {
@@ -1047,4 +1054,10 @@ body {
 
 .pagination .next-page {
     width: 260px;
+}
+
+/* Стили для выполнения JS */
+
+.popup-show {
+    display: block;
 }
