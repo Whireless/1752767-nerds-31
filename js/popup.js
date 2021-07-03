@@ -2,8 +2,8 @@ const popup = document.querySelector('.feedback-popup');
 const popupOpen = document.querySelector('.map-info .button');
 const popupClose = document.querySelector('.popup-button-cross');
 const form = popup.querySelector('form');
-let formName = popup.querySelector('[id=popup-input-name]');
-let formEmail = popup.querySelector('[id=popup-input-email]');
+const formName = popup.querySelector('[id=popup-input-name]');
+const formEmail = popup.querySelector('[id=popup-input-email]');
 
     popupOpen.addEventListener('click', function (evt) {
         evt.preventDefault();
