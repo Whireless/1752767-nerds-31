@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="style/style.css">
     <title>Каталог</title>
 </head>
@@ -14,7 +14,7 @@
       <nav class="main-navigation">
         <a class="logo" href="index.html"><img src="img/logo.svg" width="160" height="65" alt="Нёрдс"></a>
         <ul class="navigation-list">
-          <li><a href="#">Студия</a></li>
+          <li><a href="blank.html">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li class="shop"><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
@@ -29,7 +29,7 @@
      <section class="input-form">
       <h2 class="visually-hidden">Подберите параметры сайта</h2>
       <form action="https://echo.htmlacademy.ru/">
-        <fieldset>
+        <fieldset class="only-price">
           <legend class="price">Стоимость:</legend>
             <div class="range">
               <div class="filter">
@@ -184,8 +184,8 @@
         <input id="popup-input-email" type="email" placeholder="email@example.com" name="email">
        </div>
        <div class="popup-item">
-       <label for="popup-input-other-text">Текст письма:</label>
-        <input id="popup-input-other-text" class="input-other-text" type="text" placeholder="В свободной форме" name="other text">
+       <p>Текст письма:</p>
+        <textarea class="area-other-text" placeholder="В свободной форме" name="other text"></textarea>
        </div>
      </div>
      <button class="button" type="submit">Отправить</button>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Страница в разработке</title>
+ </head>
+ <body>
+    <header class="main-header">
+     <div class="container">
+        <nav class="main-navigation">
+         <a class="logo" href="index.html"><img src="img/logo.svg" width="160" height="65" alt="Нёрдс"></a>
+         <ul class="navigation-list">
+            <li class="studio"><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+         </ul>
+         <a class="basket" href="#">Корзина</a>
+        </nav>
+        <h1 class="content-developing">Cтраница в ожидании лучших времён.</h1>
+     </div>
+    </header>
+    <main>
+     <div class="container"></div>
+     <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <div class="map-description">
+            <div class="map-info">
+             <h2>Nёrds Design Studio</h2>
+             <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
+             <p>+7 800 555-86-28</p>
+             <button class="button" type="button">Напишите нам</button>
+            </div>
+            <img src="img/map.png" width="1440" height="416" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822608413316!2d30.315220215681716!3d59.968265981886944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1624103292837!5m2!1sru!2sru" width="1440" height="416" allowfullscreen title="Наш адрес - наб. Реки Карповки, 5 лит П, Санкт-Петербург"></iframe>
+        </div>
+     </section>
+    </main>
+    <footer class="main-footer">
+     <div class="container">
+         <h2 class="visually-hidden">Мы в социальных сетях</h2>
+         <ul class="social">
+          <li><a href="#"><img src="img/vk.svg" width="26" height="15" alt="Мы Вконтакте"></a></li>
+          <li><a href="#"><img src="img/fb.svg" width="12" height="22" alt="Мы в Фейсбуке"></a></li>
+          <li><a href="#"><img src="img/insta.svg" width="21" height="21" alt="Мы в Инстаграме"></a></li>
+         </ul>
+         <div class="social-info">
+          <p><b>Давайте дружить, это выгодно!</b></p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+         </div>
+     </div>
+    </footer>
+    <section class="feedback-popup">
+        <form method="POST" action="https://echo.htmlacademy.ru/">
+         <h3>Напишите нам</h3>
+         <button class="popup-button-cross" type="button" aria-label="Закрыть"></button>
+         <div class="popup-container">
+           <div class="popup-item">
+            <label for="popup-input-name">Ваше имя:</label>
+             <input id="popup-input-name" type="text" placeholder="Имя Фамилия" name="name and surname">
+           </div>
+           <div class="popup-item">
+            <label for="popup-input-email">Ваш email:</label>
+             <input id="popup-input-email" type="email" placeholder="email@example.com" name="email">
+           </div>
+           <div class="popup-item">
+            <p>Текст письма:</p>
+             <textarea class="area-other-text" placeholder="В свободной форме" name="other text"></textarea>
+           </div>
+         </div>
+         <button class="button" type="submit">Отправить</button>
+        </form>
+    </section>
+    <script src="js/popup.js"></script>
+ </body>
+</html>
