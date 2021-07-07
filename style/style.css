@@ -757,7 +757,9 @@ body {
     margin-top: 28px;
 }
 
-.input-form fieldset {
+.only-price,
+.grid-type,
+.features {
     border: none;
     margin: 0;
     padding: 0;
