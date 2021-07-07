@@ -771,6 +771,10 @@ body {
     cursor: pointer;
 }
 
+.only-price {
+    margin-bottom: 30px;
+}
+
 .range {
     width: 260px;
 }
@@ -925,7 +929,6 @@ body {
 }
 
 .button-show {
-    margin-top: 30px;
     color: var(--basic-black);
     width: 260px;
     height: 50px;
