@@ -858,6 +858,10 @@ body {
     font-size: inherit;
 }
 
+.grid-type {
+    margin-bottom: 25px;
+}
+
 .grid-type label {
     color: var(--special-black);
     margin-left: 35px;
@@ -885,6 +889,10 @@ body {
     background-image: url("../img/catalog/radio-on.svg");
     background-repeat: no-repeat;
     opacity: 0.4;
+}
+
+.features {
+    margin-bottom: 30px;
 }
 
 .features label {
