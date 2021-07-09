@@ -198,6 +198,30 @@ body {
     column-gap: 45px;
 }
 
+.work-image-red {
+    width: 300px;
+    height: 146px;
+    background-image: url("../img/index/illustration1.png");
+    background-repeat: no-repeat;
+    background-color: var(--basic-red);
+}
+
+.work-image-green {
+    width: 300px;
+    height: 146px;
+    background-image: url("../img/index/illustration2.png");
+    background-repeat: no-repeat;
+    background-color: var(--basic-green);
+}
+
+.work-image-yellow {
+    width: 300px;
+    height: 146px;
+    background-image: url("../img/index/illustration3.png");
+    background-repeat: no-repeat;
+    background-color: var(--basic-yellow);
+}
+
 .work-list h3 {
     margin-top: 18px;
     margin-bottom: 16px;
@@ -239,7 +263,11 @@ body {
     color: var(--basic-black);
 }
 
-.about-info:nth-child(3) img{
+.image-logo-about {
+    width: 360px;
+    height: 208px;
+    background-image: url("../img/index/logo2.png");
+    background-repeat: no-repeat;
     margin-left: 125px;
 }
 
@@ -486,17 +514,19 @@ body {
     margin: 18px 0 0 0;
 }
 
-.map-info button {
+.map-info a {
+    color: var(--special-grey);
+    text-decoration: none;
+}
+
+.map-info .button {
     width: 219px;
     text-transform: uppercase;
     background-color: var(--basic-red);
+    color: var(--basic-white);
     margin-top: 37px;
     margin-bottom: 47px;
     border-radius: 3px;
-}
-
-.map-info button:hover {
-    cursor: pointer;
 }
 
 .map-description {
@@ -553,12 +583,6 @@ body {
     margin-top: 34px;
 }
 
-.popup-item:nth-child(3) p {
-    margin: 0 0 9px 0;
-    font-weight: bold;
-    line-height: 18px;
-}
-
 .feedback-popup h3 {
     font-size: 45px;
     line-height: 53px;
@@ -592,11 +616,11 @@ body {
     display: block;
     font-weight: bold;
     line-height: 18px;
+    margin-bottom: 9px;
 }
 
 .feedback-popup input {
     line-height: 18px;
-    margin-top: 9px;
     color: var(--input-black);
     border: 2px solid var(--input-grey);
     border-radius: 3px;
@@ -663,9 +687,11 @@ body {
 }
 
 .social {
+    width: 356px;
     margin-top: 23px;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .social li {
@@ -1145,9 +1171,9 @@ body {
 }
 
 .pagination {
-    width: 443px;
-    height: 50px;
+    width: 600px;
     column-gap: 11px;
+    row-gap: 11px;
     padding: 0;
     margin: 50px 0 0 0;
     list-style: none;
@@ -1156,14 +1182,11 @@ body {
     text-transform: uppercase;
 }
 
-.pagination li {
-    margin-bottom: 11px;
-}
-
 .pagination a {
     color: var(--basic-black);
     background-color: var(--basic-grey);
     width: 50px;
+    height: 50px;
 }
 
 .pagination a:hover:not(.disable-button),
