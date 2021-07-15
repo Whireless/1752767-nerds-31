@@ -14,11 +14,22 @@ const formEmail = popup.querySelector('[id=popup-input-email]');
     popupClose.addEventListener('click', function (evt) {
         evt.preventDefault();
         popup.classList.remove('popup-show');
+        popup.classList.remove('popup-error');
     });
 
     form.addEventListener('submit', function (evt) {
         if (!formName.value || !formEmail.value) {
             evt.preventDefault();
-            alert('Пожалуйста, введите ваше имя и почту, чтобы мы связались с вами.');
+            popup.classList.add('popup-error');
+        };
+    });
+
+    form.addEventListener('keydown', function (evt) {
+        if(evt.key === 'Escape' || evt.key === 'Esc') {
+            if(popup.classList.contains('popup-show')) {
+                evt.preventDefault();
+                popup.classList.remove('popup-show');
+                popup.classList.remove('popup-error');
+            };
         };
     });

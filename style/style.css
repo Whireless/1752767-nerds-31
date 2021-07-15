@@ -50,7 +50,8 @@ body {
     height: 65px;
 }
 
-.logo:hover {
+.logo:hover,
+.logo:focus {
     opacity: 0.7;
 }
 
@@ -79,7 +80,7 @@ body {
 }
 
 .main-navigation a:active {
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .navigation-list {
@@ -333,6 +334,7 @@ body {
 
 .button:active {
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .button-red {
@@ -346,7 +348,6 @@ body {
 
 .button-red:active {
     background-color: var(--deep-red);
-    opacity: 0.3;
 }
 
 .button-green {
@@ -360,7 +361,6 @@ body {
 
 .button-green:active {
     background-color: var(--deep-green);
-    opacity: 0.3;
 }
 
 .button-yellow {
@@ -374,7 +374,6 @@ body {
 
 .button-yellow:active {
     background-color: var(--deep-yellow);
-    opacity: 0.3;
 }
 
 .skill-list {
@@ -527,6 +526,15 @@ body {
     margin-top: 37px;
     margin-bottom: 47px;
     border-radius: 3px;
+}
+
+.map-info .button:hover,
+.map-info .button:focus {
+    background-color: var(--hover-red);
+}
+
+.map-info .button:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .map-description {
@@ -709,6 +717,10 @@ body {
     height: 79px;
 }
 
+.social a:active {
+    opacity: 0.3;
+}
+
 .social li:hover,
 .social li:focus {
     background-color: var(--hover-red);
@@ -717,7 +729,6 @@ body {
 .social li:active {
     background-color: var(--deep-red);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    opacity: 0.3;
 }
 
 .social-info {
@@ -951,9 +962,13 @@ body {
 }
 
 .radio-input-grid:hover + label::before,
+.radio-input-grid:focus + label::before,
 .radio-input-grid:checked:hover + label::after,
+.radio-input-grid:checked:focus + label::after,
 .checkbox-input-features:hover + label::before,
-.checkbox-input-features:checked:hover + label::after {
+.checkbox-input-features:focus + label::before,
+.checkbox-input-features:checked:hover + label::after,
+.checkbox-input-features:checked:focus + label::after {
     opacity: 1;
 }
 
@@ -962,6 +977,13 @@ body {
 .checkbox-input-features:disabled + label::before,
 .checkbox-input-features:checked:disabled + label::after {
     opacity: 0.1;
+}
+
+.radio-input-grid:disabled + label,
+.radio-input-grid:checked:disabled + label,
+.checkbox-input-features:disabled + label,
+.checkbox-input-features:checked:disabled + label {
+    opacity: 0.3;
 }
 
 .button-show {
@@ -978,6 +1000,7 @@ body {
 
 .button-show:active {
     background-color: var(--deep-grey);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog .pagination {
@@ -1013,7 +1036,8 @@ body {
     opacity: 0.3;
 }
 
-.sorting li:hover {
+.sorting li:hover,
+.sorting li:focus {
     opacity: 0.6;
 }
 
@@ -1143,12 +1167,13 @@ body {
     color: var(--basic-black);
 }
 
-.content-block a:first-child:hover {
+.content-block a:first-child:hover,
+.content-block a:first-child:focus {
     color: var(--basic-red);
 }
 
 .content-block a:first-child:active {
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .button-price {
@@ -1197,14 +1222,16 @@ body {
 .pagination a:active:not(.disable-button) {
     background-color: var(--deep-grey);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .pagination .disable-button {
+    color: var(--basic-black);
     background-color: var(--basic-white);
     border: 3px solid var(--basic-grey);
     height: 44px;
     width: 44px;
+    box-shadow: none;
 }
 
 .pagination .next-page {
@@ -1228,6 +1255,26 @@ body {
 
 /* Стили для выполнения JS */
 
+@keyframes bounce {
+    0%   { transform: translateY(-2000px); }
+    70%  { transform: translateY(30px); }
+    90%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes shake {
+    0%, 100%                { transform: translateY(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80%      { transform: translateX(10px); }
+}
+
 .popup-show {
     display: block;
+    animation-name: bounce;
+    animation-duration: 0.6s;
+}
+
+.popup-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
 }
